@@ -1,0 +1,15 @@
+# Runtime dependency for the game.
+# pygame-ce (community edition) is a maintained fork of pygame.
+# It fixes the pygame.font circular-import bug on Python 3.14+.
+pygame-ce>=2.5
+
+# The 'mazegenerator' package is the A-Maze-ing package assigned to the
+# team. It is provided as-is in this repository (folder ./mazegenerator,
+# an untouched copy of the wheel's content) and can be re-installed from
+# the shipped wheel during the peer review:
+#   pip install mazegenerator-2.1.0-py3-none-any.whl
+
+# Development / quality tooling (used by `make lint` and `make test`):
+flake8>=6.0
+mypy>=1.0
+pytest>=7.0

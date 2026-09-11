@@ -1,0 +1,46 @@
+{
+    # ---------------------------------------------------------------
+    # Pac-Man configuration file.
+    # This is JSON extended with comments: lines starting with '#'
+    # or '//' are ignored, and /* ... */ blocks are supported too.
+    # Every value has a safe default and is clamped if out of range.
+    # ---------------------------------------------------------------
+
+    "highscore_filename": "highscores.json",
+
+    "lives": 3,
+    "seed": 42,             // the FIRST level always uses this seed
+    "level_max_time": 90,   // seconds allowed per level
+
+    "points_per_pacgum": 10,
+    "points_per_super_pacgum": 50,
+    "points_per_ghost": 200,
+
+    // Number of pacgums placed in each level. 0 (the default) fills every
+    // corridor; any positive value (e.g. 42) spreads that many pacgums
+    // evenly over the maze. The 4 super-pacgums are always placed on top.
+    "pacgum": 0,
+
+    "edible_duration": 7.0,    // seconds ghosts stay edible
+    "ghost_respawn_time": 5.0, // seconds before an eaten ghost returns
+    "player_speed": 6.0,       // cells per second
+    "ghost_speed": 5.0,        // cells per second
+
+    /* The game needs at least 10 levels; mazes grow level after
+       level. Missing levels are padded automatically. Both "levels"
+       and the singular "level" spelling are accepted. */
+    "levels": [
+        {"width": 19, "height": 19},
+        {"width": 21, "height": 21},
+        {"width": 23, "height": 23},
+        {"width": 25, "height": 25},
+        {"width": 27, "height": 27},
+        {"width": 29, "height": 29},
+        {"width": 31, "height": 31},
+        {"width": 33, "height": 33},
+        {"width": 35, "height": 35},
+        {"width": 37, "height": 37},
+        {"width": 39, "height": 39},
+        {"width": 41, "height": 41}
+    ]
+}
