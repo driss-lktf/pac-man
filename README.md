@@ -273,7 +273,6 @@ The game is **deployed on Itch.io** as a free, restricted (private) build, so
 it can be installed and launched like a real game, with no Python required:
 
 > **Play it:** <https://destynyle.itch.io/pacmandsomdlak>
-> **Access password:** `***REMOVED***`
 > Platform: Linux x86_64. Download the zip, then run `./play.sh`.
 
 The packaging script and spec live at the repository root:
